@@ -1,0 +1,158 @@
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+}
+
+.root {
+  background-color: rgb(255, 228, 196);
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: LightBlue;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card-img img {
+  width: 50vh;
+  height: 50vh;
+}
+
+.card-content {
+  padding: 1rem;
+  padding-top: 0;
+
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.icon-button {
+  font-weight: bold;
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: CornflowerBlue;
+  color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  position: relative;
+}
+
+.color-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: red;
+  border-radius: 50%;
+}
+
+#color_ {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.upload {
+  fill: white;
+}
+
+.upload :hover {
+  cursor: pointer;
+}
+
+#umbrella_img {
+  display: flex;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  animation: rotate 1.5s linear infinite;
+  width: 174px;
+  height: 174px;
+  position: relative;
+}
+
+.spinner2 {
+  animation: rotate 1.5s linear infinite;
+  fill: white;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(359deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.loader {
+  fill: cornflowerblue;
+}
+
+.loader.hidden {
+  animation: fadeOut 0.3s;
+  animation-fill-mode: forwards;
+}
+
+#loader2.hidden {
+  animation: fadeOut 0.3s;
+  animation-fill-mode: forwards;
+}
+.upload.hidden {
+  animation: fadeOut 0.3s;
+  animation-fill-mode: forwards;
+}
+
+#loader2 {
+  position: absolute;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 100%;
+    visibility: visible;
+  }
+}
+
+.umbrellaImg.visible {
+  animation: fadeIn 1s;
+  animation-fill-mode: forwards;
+}
+
+.logo.visible {
+  animation: fadeIn 1s;
+}
+
+#cancel :hover {
+  cursor: pointer;
+}
